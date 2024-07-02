@@ -1,0 +1,111 @@
+.bg-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(7, 7, 171);
+}
+
+.header-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.header-content {
+  display: flex;
+  gap: 25px;
+}
+.header-text {
+  font-size: 0.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.section-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+.section-container {
+  h4 {
+    font-size: 0.7rem;
+    width: 300px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+.dot-span-active {
+  width: 8px;
+  height: 8px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-span-inactive {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+.dot-container {
+  display: flex;
+  gap: 5px;
+}
+.section-container-btn {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #482be7;
+  color: white;
+}
+
+/* Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-text {
+    font-size: 1rem;
+  }
+
+  .section-container {
+    h4 {
+      font-size: 1.2rem;
+      width: 500px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .section-container-btn {
+    padding: 15px 25px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .header-text {
+    font-size: 1rem;
+  }
+
+  .section-container {
+    h4 {
+      font-size: 0.8rem;
+      width: 500px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .section-container-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+}

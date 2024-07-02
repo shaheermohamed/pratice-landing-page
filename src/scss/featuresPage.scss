@@ -1,0 +1,105 @@
+.features-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/images/fetaures.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(7, 7, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-dot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+/* Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features-dot-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .features-main-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .image-div {
+    background-image: url("../assets/images/features1.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover to ensure the image covers the div */
+    background-position: center; /* Center the image */
+    flex: 1;
+    height: 500px; /* Adjust height as needed */
+  }
+
+  .slider-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .content-div-2 {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    h1 {
+      font-size: 0.8rem;
+      width: 200px;
+    }
+    h4 {
+      font-size: 0.8rem;
+      width: 200px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+    }
+  }
+  .content-div-1 {
+    h1 {
+      font-size: 0.8rem;
+      width: 500px;
+    }
+    h4 {
+      font-size: 0.8rem;
+      width: 500px;
+    }
+  }
+
+  .dot-span-active {
+    width: 8px;
+    height: 8px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-span-inactive {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid lightgray;
+  }
+  .features-dot-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

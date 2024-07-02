@@ -1,0 +1,154 @@
+.testimonial-container {
+  width: 100vw;
+  height: 100vh;
+  //   background-image: url("../assets/images/content.png");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  background-color: #1e0e62;
+  display: flex;
+  justify-content: center;
+//   align-items: center;
+}
+.testimonial-div {
+    margin-top: 20px;
+    width: 80%;
+    height: 500px;
+    h1 {
+      text-align: left;
+      margin-left: 5px;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+  .testi-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  .testi-each {
+    padding: 10px;
+    display: flex;
+    width: 600px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    h4 {
+      color: white;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 10px;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 1rem;
+      color: white;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 10px;
+    }
+  }
+
+/* Tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .testimonial-div {
+        margin-top: 50px;
+        width: 60%;
+        height: 500px;
+        h1 {
+          text-align: left;
+          margin-left: 5px;
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+      .testi-div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+      .testi-each {
+        padding: 10px;
+        display: flex;
+        width: 500px;
+        height: 150px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    
+        h4 {
+          color: white;
+          font-size: 0.8rem;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          margin-left: 10px;
+          font-weight: 400;
+        }
+        h3 {
+          font-size: 1rem;
+          color: white;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          margin-left: 10px;
+        }
+      }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .testimonial-div {
+    margin-top: 100px;
+    width: 60%;
+    height: 500px;
+    h1 {
+      text-align: left;
+      margin-left: 5px;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+  .testi-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  .testi-each {
+    padding: 10px;
+    display: flex;
+    width: 340px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    h4 {
+      color: white;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 10px;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 1rem;
+      color: white;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 10px;
+    }
+  }
+}
